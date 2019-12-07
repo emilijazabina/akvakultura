@@ -44,99 +44,57 @@
         </ul>
     </div>
 </nav>
+<div class="container">
+    <h1 class="h1">Akvakultūra</h1>
+</div>
+<div class="container1-xl">
+        <a href="img/gallery/Alternative-Aquaculture-big.jpg" data-fancybox="images">
+            <img class="img-fluid" src="img/gallery/Alternative-Aquaculture-small.jpg"  alt=""/>
+        </a>
 
-<section id="gallery">
-    <div class="container">
-        <div id="image-gallery">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                    <div class="img-wrapper">
-                        <a href="https://unsplash.it/500"><img src="https://unsplash.it/500" class="img-responsive"></a>
-                        <div class="img-overlay">
-                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                    <div class="img-wrapper">
-                        <a href="https://unsplash.it/600"><img src="https://unsplash.it/600" class="img-responsive"></a>
-                        <div class="img-overlay">
-                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                    <div class="img-wrapper">
-                        <a href="https://unsplash.it/700"><img src="https://unsplash.it/700" class="img-responsive"></a>
-                        <div class="img-overlay">
-                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                    <div class="img-wrapper">
-                        <a href="https://unsplash.it/800"><img src="https://unsplash.it/800" class="img-responsive"></a>
-                        <div class="img-overlay">
-                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                    <div class="img-wrapper">
-                        <a href="https://unsplash.it/900"><img src="https://unsplash.it/900" class="img-responsive"></a>
-                        <div class="img-overlay">
-                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                    <div class="img-wrapper">
-                        <a href="https://unsplash.it/1000"><img src="https://unsplash.it/1000" class="img-responsive"></a>
-                        <div class="img-overlay">
-                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                    <div class="img-wrapper">
-                        <a href="https://unsplash.it/1100"><img src="https://unsplash.it/1100" class="img-responsive"></a>
-                        <div class="img-overlay">
-                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
-                    <div class="img-wrapper">
-                        <a href="https://unsplash.it/1200"><img src="https://unsplash.it/1200" class="img-responsive"></a>
-                        <div class="img-overlay">
-                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- End row -->
-        </div><!-- End image gallery -->
-    </div><!-- End container -->
-</section>
-$('.lightbox').click(function() {
-var title = $(this).attr('title');
-var src = $(this).children('img').attr("src").replace('/240/140/', '/480/280/');
-// Change the line above to modify the src according to your naming convention for larger images.
-// You could even change it to source a data attrib ;)
+        <a href="img/gallery/Aquakultur04_big.jpg" data-fancybox="images">
+            <img class="img-fluid" src="img/gallery/Aquakultur04_small.jpg"  alt=""/>
+        </a>
 
-var alt = $(this).children('img').attr("alt") || "";
-var $img = $('<img class="center-block img-responsive" alt="' + alt + '" src="' + src + ">');
-$('.modal-title').html(title);
-$('.modal-body').html('<p>Loading...</p>');
-$('#lightbox').modal({
-show: true
-});
-$img.load(function() {
-$('.modal-body').html($img);
-})
-});
+        <a href="img/gallery/alges_big.jpg" data-fancybox="images">
+            <img class="img-fluid" src="img/gallery/alges_small.jpg"  alt=""/>
+        </a>
+        <a href="img/gallery/aquaculture1_big.jpg" data-fancybox="images">
+        <img class="img-fluid" src="img/gallery/aquaculture1_small.jpg"  alt=""/>
+        </a>
+
+        <a href="img/gallery/aquaculture-farming-big.jpg" data-fancybox="images">
+            <img class="img-fluid" src="img/gallery/Aquakultur05_big.jpg"  alt=""/>
+        </a>
+
+        <a href="img/gallery/many_fish_big.jpg" data-fancybox="images">
+            <img class="img-fluid" src="img/gallery/many_fish_small.png"  alt=""/>
+        </a>
+
+
+    </p>
+
+</div>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
+<script>$(document).ready(function(){
+//FANCYBOX
+//https://github.com/fancyapps/fancyBox
+    $(".fancybox").fancybox({
+        openEffect: "none",
+        closeEffect: "none"
+    });
+});
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<link  href="fancybox-master/dist/jquery.fancybox.min.css" rel="stylesheet">
+<script src="fancybox-master/dist/jquery.fancybox.min.js"></script>
 </body>
 </html>
