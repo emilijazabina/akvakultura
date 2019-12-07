@@ -11,6 +11,7 @@
 
 </head>
 <body>
+
 <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #C0F2F5">
     <a class="navbar-brand" href="home.html"><img src="img/akva_logo.png" alt="logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,6 +45,95 @@
     </div>
 </nav>
 
+<section id="gallery">
+    <div class="container">
+        <div id="image-gallery">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                    <div class="img-wrapper">
+                        <a href="https://unsplash.it/500"><img src="https://unsplash.it/500" class="img-responsive"></a>
+                        <div class="img-overlay">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                    <div class="img-wrapper">
+                        <a href="https://unsplash.it/600"><img src="https://unsplash.it/600" class="img-responsive"></a>
+                        <div class="img-overlay">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                    <div class="img-wrapper">
+                        <a href="https://unsplash.it/700"><img src="https://unsplash.it/700" class="img-responsive"></a>
+                        <div class="img-overlay">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                    <div class="img-wrapper">
+                        <a href="https://unsplash.it/800"><img src="https://unsplash.it/800" class="img-responsive"></a>
+                        <div class="img-overlay">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                    <div class="img-wrapper">
+                        <a href="https://unsplash.it/900"><img src="https://unsplash.it/900" class="img-responsive"></a>
+                        <div class="img-overlay">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                    <div class="img-wrapper">
+                        <a href="https://unsplash.it/1000"><img src="https://unsplash.it/1000" class="img-responsive"></a>
+                        <div class="img-overlay">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                    <div class="img-wrapper">
+                        <a href="https://unsplash.it/1100"><img src="https://unsplash.it/1100" class="img-responsive"></a>
+                        <div class="img-overlay">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                    <div class="img-wrapper">
+                        <a href="https://unsplash.it/1200"><img src="https://unsplash.it/1200" class="img-responsive"></a>
+                        <div class="img-overlay">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- End row -->
+        </div><!-- End image gallery -->
+    </div><!-- End container -->
+</section>
+$('.lightbox').click(function() {
+var title = $(this).attr('title');
+var src = $(this).children('img').attr("src").replace('/240/140/', '/480/280/');
+// Change the line above to modify the src according to your naming convention for larger images.
+// You could even change it to source a data attrib ;)
+
+var alt = $(this).children('img').attr("alt") || "";
+var $img = $('<img class="center-block img-responsive" alt="' + alt + '" src="' + src + ">');
+$('.modal-title').html(title);
+$('.modal-body').html('<p>Loading...</p>');
+$('#lightbox').modal({
+show: true
+});
+$img.load(function() {
+$('.modal-body').html($img);
+})
+});
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
