@@ -1,1 +1,1 @@
-# akvakultura.github.io/home.html
+# https://emilijazabina.github.io/akvakultura/home.html
